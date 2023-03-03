@@ -65,6 +65,29 @@ Editor SDK 설정을 하기 전에 먼저 VSCode에서 zipfs 을 설치해줍니
 yarn plugin import typescript
 ```
 명령어를 통해 자체적으로 types를 포함하지 않아서 @types로 시작하는 별도의 타입 정의를 설치해줘야 하는 작업을 자동화 해주는 플러그인을 설치하였습니다.
+---
+ETC
+.gitignore에 추가해야할 것들
+
+
+### yarn ###
+# used Zero-Install
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# unused Zero-Install
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
 
 
 
@@ -72,5 +95,6 @@ yarn plugin import typescript
 https://kasterra.github.io/setting-yarn-berry/
 https://toss.tech/article/node-modules-and-yarn-berry
 https://kasterra.github.io/setting-yarn-berry/
+https://duck-blog.vercel.app/blog/web/what-is-yarn-berry
 
 
